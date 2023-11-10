@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img_Liang/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img_Liang/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="CSS_Liang/style_Liang.css">
+    <!-- <link href="//unpkg.com/layui@2.8.17/dist/css/layui.css" rel="stylesheet"> -->
+    <title>Calculator_Liang</title>
+    <canvas></canvas>
+</head>
+<body onload="startCalculatorHR()">
+    <header id="page_header">
+        <br><br><br><br>
+        <h1>Calculator with memory and operator</h1>
+        <h1>slelection</h1>
+        <br>
+        <h5>Calculator,memory and choice</h5>
+        <br>
+    </header>
+
+    <section id="calculatorHR">
+        <h3>Calculator</h3>
+        <input type="number" id="number1HR">
+        <span id="calculatorSelectHR">
+            <select id="selectOperatorHR"></select>
+        </span>
+        <input type="number" id="number2HR">
+        <button onclick="calculateHR()" >=</button>
+        <input type="number" id="resultHR" readonly>
+        <br><label id="errorHR"></label>
+        <br><button onclick="switchToOperatorsHR()">Change Operators</button>
+        <button onclick="viewHistoryHR()">View Calculation History</button>
+    </section>
+
+    <section id="operatorsHR">
+        <h3>Add/Remove Operators</h3>
+        <label>Remove Operator:</label>
+        <span id="removeSelectHR"></span>
+        <button onclick="removeOperatorHR()">Remove Operator</button>
+        <br>
+        <label>Add Operator:</label>
+        <select id="selectAddOperatorHR"></select>
+        <button onclick="addOperatorHR()">Add Operator</button>
+        <br><br><button onclick="backToCalculatorHR()">Back to Calculator</button>
+        <button onclick="viewHistoryHR()">View Calculation History</button>
+    </section>
+
+    <section id="memoryHR">
+        <table class="prevCalc" id="memoryCalculationsHR"></table>
+        <br><br><button onclick="backToCalculatorHR()">Back to Calculator</button>
+        <button onclick="switchToOperatorsHR()">Change Operators</button>
+    </section>
+
+    <footer>
+        <br><br><br><br>
+        <h6>&#169;Haoran Liang 58298 2023 <img class="Liang" src="img_Liang/favicon.ico" alt="noteL"> </h6>
+    </footer>
+
+    <script src="JS_Liang/scriptsHR.js"></script>
+</body>
+</html>
+
+
+<script src="JS_Liang/215.js"></script>

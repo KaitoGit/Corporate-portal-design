@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+.canvas-container {
+    position: absolute;
+    top: 100%; /* 将盒子的顶部放置在屏幕的中间 */
+    left: 50%; /* 将盒子的左侧放置在屏幕的中间 */
+    transform: translate(-50%, -50%); /* 通过负的50%偏移将盒子居中 */
+    width: 2000px; /* 设置容器宽度为40px */
+    height: 400px; /* 设置容器高度为40px */
+    overflow: hidden; /* 隐藏超出容器的内容 */
+}
+
+canvas {
+    width: 100%; /* 让canvas占满容器 */
+    height: 100%; /* 让canvas占满容器 */
+}
+
+audio{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    opacity: 0.15;
+    transition: opacity 0.5s;
+}
+audio:hover{
+    opacity: 1;
+}

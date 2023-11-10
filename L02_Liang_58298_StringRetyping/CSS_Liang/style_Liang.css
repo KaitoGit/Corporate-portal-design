@@ -1,0 +1,161 @@
+    body{
+    text-align: center;
+    background-image:url(./BG.png);
+    transform: scale(1.5);
+    }
+
+    footer{
+    font-style: italic;
+    font-size: small;
+    }
+
+    h3{
+    color: blue;
+    }
+
+    h5{
+    color: red;
+    }
+
+    h6{
+        font-style:italic;
+        font-size: small;
+        font-family: Brush Script MT, Verdana, sans-serif;
+    }
+
+    table {
+        border-collapse: collapse;
+        margin: 2px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    td, th {
+        border: 1px solid;
+        width: 50px;
+        height: 30px;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    th {
+        border-width: 2px;
+        border-color: #000;
+        background-color: #f2f2f2;
+    }
+    
+    tr:nth-child(even) {
+        background-color: #c1d82e;
+    }
+    
+    input{
+    text-align: center;
+    }
+
+    .btn1{
+        width: auto;
+        height: auto;
+        border-radius:50%;
+        background-color: green;
+        border: 1px solid #d5d5d5;
+        font-weight:bold;
+        color: white;
+    }
+        .btn1:hover{
+        background-color: #bb1784;
+        }
+        .btn1:active{
+            background-color: #bb17a0;
+            box-shadow: 0 5px #666;
+            transform:translateY(4px);
+        }
+
+    .btn2{
+        width: auto;
+        height: auto;
+        border-radius:50%;
+        background-color: red;
+        border: 1px solid #d5d5d5;
+    }
+        .btn2:hover{
+        background-color: gray;
+        }
+        .btn2:active{
+            background-color: grey;
+            box-shadow: 0 5px #666;
+            transform:translateY(4px);
+        }
+
+        
+        .niceButton {
+            transform: scale(0.5);
+            /* 相对定位 */
+            position: relative;
+            width: 200px;
+            height: 80px;
+            line-height: 80px;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 24px;
+            color: #fff;
+            /* 渐变背景 */
+            background: linear-gradient(to right, #03a9f4, #f441a5, #ffeb3b, #09a8f4);
+            /* 背景渐变色大小 */
+            background-size: 200%;
+            /* 圆角 */
+            border-radius: 50px;
+            z-index: 1;
+        }
+        
+        /* 发光效果 */
+        .niceButton::before {
+            content: "";
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            bottom: -5px;
+            right: -5px;
+            /* 渐变背景 */
+            background: linear-gradient(to right, #03a9f4, #f441a5, #ffeb3b, #09a8f4);
+            /* 背景渐变色大小 */
+            background-size: 400%;
+            /* 圆角 */
+            border-radius: 50px;
+            /* 位于按钮之下 */
+            z-index: -1;
+            /* 设置模糊度 显示发光效果 */
+            filter: blur(20px);
+        }
+        
+        /* 鼠标移入执行动画 */
+        .niceButton:hover::before {
+            animation: streamer 8s infinite;
+        }
+        
+        /* 接下来定义动画 */
+        @keyframes streamer {
+            100% {
+                /* 背景位置 */
+                background-position: -400% 0;
+            }
+        }
+
+    .inputL {
+        margin-left: 100px;
+        width: 150px;
+        height: 30px;
+        border-radius: 5px;
+        border: 1px solid #d5d5d5;
+        text-align: center;
+    }
+
+    .Liang {
+        max-width: 1%; 
+        height: auto; 
+    }
+    
+    .selectBtnHR{
+        background-color:black;
+        color:#FFF;
+    }

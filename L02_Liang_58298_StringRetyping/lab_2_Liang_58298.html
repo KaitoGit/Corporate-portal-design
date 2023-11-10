@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 2 HR</title>
+    <link rel="icon" href="img_Liang/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img_Liang/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="CSS_Liang/style_Liang.css">
+    <script src="JS_Liang/scriptsHR.js"></script>
+</head>
+<body onload="initPageHR()">
+    <header>
+        <br><br><br><br><br><br><br><br>
+        <h1>String Retyping</h1>
+        <h3>Task2_HaoranLiang58298</h3>
+        <h5>Type and Retype</h5>
+    </header>
+    <section id="startSectionHR">
+        <label for="wordCountSelectHR">How many words do you want to enter</label>
+        <select id="wordCountSelectHR" class="selectBtnHR"></select>
+        <button class="btn1" onclick="startHR()" id="startBtnHR">Start</button>
+        <button class="btn2" onclick="stopHR()" id="stopBtnHR" disabled>Stop</button>
+    </section>
+    <section id="entrySectionHR">
+        <br>
+        <input class="inputL" type="text" id="wordInputHR" placeholder="Enter the wordHR" disabled onkeypress="handleKeyPress(event)">
+        <button class="niceButton" onclick="enterWordHR()" id="enterBtnHR" disabled>Enter</button>
+        <br>
+        <span id="typedWordsHR">
+            <span>This is where words will be typed</span>
+        </span>
+    </section>
+    <footer>
+        <br>Typing words
+        <h6>&#169;Liang Haoran 2023 <img class="Liang" src="img_Liang/favicon.ico" alt="noteL"> </h6>
+    </footer>
+</body>
+</html>
+

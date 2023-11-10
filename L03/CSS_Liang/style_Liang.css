@@ -1,0 +1,138 @@
+    *{
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    body{
+    overflow: hidden;
+    text-align: center;
+
+    }
+
+    canvas {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        background-color: #000;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .Liang {
+        max-width: 1%; 
+        height: auto; 
+    }
+    .prevCalc {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        font-size: 150%;
+    }
+
+    footer{
+    text-align: center;
+    font-style: italic;
+    }
+
+    .calculator {
+        width: 300px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 10px;
+        border: 1px solid #000;
+    }
+    
+    #display {
+        width: 90%;
+        padding: 10px;
+        border: none;
+        background: rgba(255, 255, 255, 0.5); /* 半透明白色背景 */
+        color: black;
+        font-size: 24px;
+        text-align: right;
+        margin-bottom: 10px;
+        outline: none;
+    }
+    
+    .buttons button {
+        width: 50px;
+        height: 50px;
+        margin: 5px;
+    }
+    h1{
+    color: white;
+    }
+    h3{
+    color: blue;
+    }
+
+    h5{
+    color: green;
+    }
+
+
+    h6{
+        color: white;
+        font-size: 150%;
+        font-style:italic;
+        /* font-size: small; */
+        font-family: Brush Script MT, Verdana, sans-serif;
+    }
+
+    label{
+        color: white;
+        font-size: 150%;
+        font-style:italic;
+        /* font-size: small; */
+        font-family: Brush Script MT, Verdana, sans-serif;
+    }
+ 
+    .history{
+        color: white;
+        font-size: 150%;
+        font-style:italic;
+
+    }
+    /* td {
+        padding: 10px;
+    }  */
+
+    .buttons button {
+        width: 50px;
+        height: 50px;
+        margin: 5px;
+        position: relative;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 24px;
+        color: #fff;
+        background: linear-gradient(to right, #03a9f4, #f441a5, #ffeb3b, #09a8f4);
+        background-size: 400%;
+        border-radius: 50px;
+        z-index: 1;
+        overflow: hidden;
+        transition: all 2s ease;
+    }
+    .buttons button::before {
+        content: "";
+        position: absolute;
+        top: -5px;
+        left: -5px;
+        bottom: -5px;
+        right: -5px;
+        background: linear-gradient(to right, #03a9f4, #f441a5, #ffeb3b, #09a8f4);
+        background-size: 400%;
+        border-radius: 50px;
+        z-index: -1;
+        filter: blur(20px);
+        transition: all 2s ease;
+    }
+    .buttons button:hover {
+        background-position: -400% 0;
+    }
+    .buttons button:hover::before {
+        background-position: -400% 0;
+    }

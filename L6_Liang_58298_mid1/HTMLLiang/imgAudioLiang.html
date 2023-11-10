@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../ImgLiang/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../ImgLiang/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../CSSLiang/style_58298.css">
+    <title>Haoran Liang's A coffee, tea and utensils for their preparation internet store</title>
+</head>
+
+<body onload="startHR()">
+    <header id="page_header">
+        <h1>A coffee,tea and utensils for their preparation internet store</h1>
+        <h1>Connect sounds and images</h1>
+        <h1>Haoran Liang 58298</h1>
+        <h5>Audio Image</h5>
+    </header>
+
+    <section id="start">
+        <h3>Type in and select</h3>
+        <select id="choiceHR">
+            <option value="image">Image</option>
+            <option value="sound">Sound</option>
+        </select>
+        <input type="text" id="playerNameHR" placeholder="Enter your name">
+        <select id="questionCountHR">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        <button id="startBtn" onclick="startGameHR()">Start Game</button>
+    </section>
+
+    <section id="images">
+        <img id="randomImage" src="" alt="Random Image">
+        <select id="imageSoundOptions" onchange="playCupSoundHR()">
+            <option value="black.mp3">black</option>
+            <option value="cappuccino.mp3">cappuccino</option>
+            <option value="green.mp3">green</option>
+            <option value="juice.mp3">juice</option>
+            <option value="red.mp3">red</option>
+        </select>
+
+        <button id="confirmImageBtn" onclick="confirmChoiceImageHR()">Confirm Your Choice</button>
+    </section>
+
+    <section id="audio">
+        <audio id="randomAudio">
+            Your browser does not support the audio element.
+        </audio>
+        <select id="audioImageOptions" onchange="putCupPhotoHR()">
+            <option value="black.png">black</option>
+            <option value="cappuccino.png">cappuccino</option>
+            <option value="green.png">green</option>
+            <option value="juice.png">juice</option>
+            <option value="red.png">red</option>
+        </select>
+        <div id="animalImageContainer">
+            <img id="animalImage" src="" alt="Cup Image" style="display: none">
+        </div>
+        <button id="confirmSoundBtn" onclick="confirmChoiceSoundHR()">Confirm Your Choice</button>
+    </section>
+
+    <section id="mark">
+        Player name: <span id="playerNameSpanHR"></span><br>
+        How many more questions: <span id="remainingQuestionsSpanHR"></span><br>
+        Player score: <span id="playerScoreSpanHR"></span><br>
+    </section>
+    <section id="new">
+        <button id="newGameBtn" onclick="newGameHR()">New Game</button>
+    </section>
+    <nav>
+        <td><a href="./indexLiang.html">Homepage</a></td>
+        <td><a href="./imgAudioLiang.html">Images & sounds</a></td>
+        <td><a href="./gameLiang.html">Game</a></td>
+    </nav>
+    <footer>
+        <br><br><br><br>
+        <h6>&#169;Haoran Liang 58298 2023 <img class="Liang" src="../ImgLiang/favicon.ico" alt="noteL"> </h6>
+    </footer>
+
+    <script src="../JSLiang/scripts_58298.js"></script>
+</body>
+
+</html>

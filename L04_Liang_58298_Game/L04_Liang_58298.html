@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS_Liang/styleSumGameHR.css">
+    <script src="JS_Liang/scriptsSumGameHR.js"></script>
+    <link rel="icon" href="img_Liang/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img_Liang/favicon.ico" type="image/x-icon">
+
+    <title>Haoran Liang 58298's Quick Sum Game</title>
+</head>
+<body>
+    <header id="pageHeader">
+        <h1>Haoran Liang 58298's Quick Sum Game</h1>
+    </header>
+    <h1>Game</h1>
+    <h2 id="countingHR">Quick Summation</h2>
+    <h3 id="remainingQuestionsHR">Start</h3>
+    <table>
+        <tr>
+            <th>Result:</th>
+            <th id="resultCountHR">0</th>
+            <th>Sum</th>
+        </tr>
+        <tr>
+            <td id="num1HR"></td>
+            <td id="num2HR"></td>
+            <td><input id="sumInputHR" type="number" onchange="checkAnswer()"></td>
+        </tr>
+        <tr>
+            <td id="num3HR"></td>
+            <td id="num4HR"></td>
+            <td><button id="taskBtnHR" onclick="generateTask()">Task</button></td>
+        </tr>
+        <tr>
+            <td id="num5HR"></td>
+            <td id="num6HR"></td>
+            <td><button id="checkBtnHR" onclick="checkAnswer()">Check</button></td>
+        </tr>
+        <tr>
+            <th>checkAnswer</th>
+            <th id="resultHR" class="Result">0</th>
+            <th></th>
+        </tr>
+    </table>
+    <label>How many rows:</label>
+    <select id="rowCountHR">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+    </select><br><br>
+    <label>How many questions:</label>
+    <select id="questionCountHR">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+    </select><br><br>
+    <label>Start game</label>
+    <button id="startBtnHR" onclick="startGame()">Start</button>
+    <br><br>
+    <label>Start new game</label>
+    <button id="newGameBtnHR" onclick="newGame()">New Game</button>
+    <footer>
+        <br><br><br><br>
+        <h6>&#169;Haoran Liang 58298 2023 <img class="Liang" src="img_Liang/favicon.ico" alt="noteL"> </h6>
+    </footer>
+    
+</body>
+</html>
+

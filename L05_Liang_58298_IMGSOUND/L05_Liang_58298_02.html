@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>HR Audio & Image</title>
+    <link rel="stylesheet" href="CSSLiang/CSSLiang.css">
+    <link rel="icon" href="ImgLiang/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="ImgLiang/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    
+    <header id="page_headerHR">
+        <h1>In JavaScript World</h1>
+        <h3>Lecture 4</h3>
+        <h5>Audio and Images - HaoranLiang 58298</h5>
+        <td><a href="L05_Liang_58298_01.html">go back</a></td>
+    </header>
+    <section id="startHR">
+        <h5>Our home pet.</h5>
+        <div class="buttons">
+        <button onclick="changeAnimalRandomHR()">Random Change Animal</button><br>
+        </div>
+
+        
+        <p id="clickCountDisplay">Click Count: 0</p><button onclick="resetClickCount();">Reset Click Count</button>
+
+        <br><br>
+        <img id="animalHR" src="ImgLiang/cat.png" title="cat" onclick="changeAnimalHR()">
+
+        
+        <p id="clickCountDispla">Click Count: 0</p><button onclick="resetClickCoun();">Reset Click Count</button>
+    </section>
+    <section class="musicsHR">
+        <audio controls id="musicHR" hidden loop>
+            <source id="myMusicHR" src="AudioLiang/cat.mp3" type="audio/mpeg">
+        </audio>
+    </section>
+    <section id="endHR">
+        <br>
+        <label id="test1HR"></label><br>
+        <label id="test2HR"></label><br>
+        <label id="test3HR"></label><br>
+        
+    </section>
+    <footer>
+        <h6>&#169;Haoran Liang 58298 2023 <img class="Liang" src="ImgLiang/favicon.ico" alt="noteL"> </h6>
+    </footer>
+
+    <script src="JSLiang/scriptsLiang.js"></script>
+</body>
+
+</html>
