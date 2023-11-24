@@ -1,0 +1,73 @@
+body {
+    margin: 15px auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+
+h1 {
+    text-align: center;
+    color: #00d5ff;
+}
+
+h3 {
+    text-align: center;
+    color: #e50e96;
+}
+
+h4 {
+    margin: 10px;
+    text-align: center;
+    color: #9d0ee5;
+}
+
+header, footer {
+    margin: 20px;
+}
+
+footer {
+    font-style: italic;
+    font-size: small;
+    font-family: Brush Script MT, Verdana, sans-serif;
+}
+
+
+a:link { 
+    color: #00d5ff; 
+    text-decoration: underline; 
+} 
+
+a:visited { 
+    color: #0f0f0f; 
+    text-decoration: none; 
+} 
+
+a:hover { 
+    color: #fa0303; 
+    text-decoration: none; 
+} 
+
+a:active { 
+    color: #0a0808; 
+    text-decoration: none; 
+}
+
+table, th, tr, td {
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid;
+}
+
+#indexStart table,
+#indexStart tr, 
+#indexStart th, 
+#indexStart td {
+    border: none;
+    border-collapse: none;
+}
+
+ul {
+    text-align: left;
+    margin-left: 40%;
+}
