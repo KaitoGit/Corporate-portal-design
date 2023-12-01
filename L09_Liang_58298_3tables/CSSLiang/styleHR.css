@@ -1,0 +1,95 @@
+body {
+    margin: 15px auto;
+    overflow: hidden;
+    text-align: center;
+    background-color: #f7fad5;
+    position: relative; /* 为子元素定位提供基准 */
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* 确保包括边框和内填充在元素的宽高内 */
+}
+
+canvas {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1; /* 确保画布在其他内容之下 */
+
+}
+.transparent-input {
+    background: rgba(255, 255, 255, 0.5); /* 半透明白色背景 */
+}
+
+.text {
+    letter-spacing: 2px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10; /* 确保文本显示在画布之上 */
+}
+
+h1 {
+    text-align: center;
+    color: #00d5ff;
+}
+
+h3 {
+    text-align: center;
+    color: #e50e96;
+}
+
+h4 {
+    margin: 10px;
+    text-align: center;
+    color: #9d0ee5;
+}
+
+header, footer {
+    margin: 20px;
+}
+
+
+
+a:link { 
+    color: #00d5ff; 
+    text-decoration: underline; 
+} 
+
+a:visited { 
+    color: #0f0f0f; 
+    text-decoration: none; 
+} 
+
+a:hover { 
+    color: #fa0303; 
+    text-decoration: none; 
+} 
+
+a:active { 
+    color: #0a0808; 
+    text-decoration: none; 
+}
+
+table, th, tr, td {
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid;
+}
+
+#indexStart table,
+#indexStart tr, 
+#indexStart th, 
+#indexStart td {
+    border: none;
+    border-collapse: none;
+}
+
+ul {
+    text-align: left;
+    margin-left: 40%;
+}
