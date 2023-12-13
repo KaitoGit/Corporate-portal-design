@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* 确保包括边框和内填充在元素的宽高内 */
+    text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    /*background-color: #99c4df;*/
+    background-image:url(./BG.jpg);
+}
+
+canvas {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1; /* 确保画布在其他内容之下 */
+
+}
+
+.transparent-input {
+    background: rgba(255, 255, 255, 0.5); /* 半透明白色背景 */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff9900;
+}
+
+article {
+    margin-bottom: 20px;
+    text-align: center;
+}
+form {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* 表格样式 */
+table {
+    border-collapse: separate; /* 使边框分开，以实现双线效果 */
+    border-spacing: 2px; /* 设置边框间距 */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 80%; /* 调整表格宽度 */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* 给表格添加阴影 */
+    background: rgba(255, 255, 255, 0.5); /* 半透明白色背景 */
+}
+
+th, tr, td {
+    border: 1px solid #333; /* 给单元格添加单独的边框 */
+    padding: 8px; /* 添加内部填充 */
+    background: rgba(255, 255, 255, 0.5); /* 半透明白色背景 */
+}
+
+th {
+    background: rgba(255, 255, 255, 0.5); /* 半透明白色背景 */
+    color: #333; /* 表头字体颜色 */
+    font-weight: bold; /* 加粗字体 */
+}
+
+td:hover {
+    background-color: #ed9595; /* 鼠标悬停时单元格背景颜色 */
+}
+
+/* ///////////////////////////////////////////////////////// */
+.page {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+.page h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+
+
+.social-media .social-link {
+    margin-right: 10px;
+}
+
+.slideshow-container img {
+    max-width: 30%; /* 图片最大宽度为父容器的100% */
+    height: auto; /* 高度自适应，保持比例 */
+}
+
+
+
+h1 {
+    color: red;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-align: center;
+    font-style:italic;
+    font-family: Brush Script MT, Verdana, sans-serif;
+}
+h3 {
+    color: #e50e96;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-align: center;
+}
+h5{
+    color: black;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.Liang {
+    max-width: 1%; 
+    height: auto; 
+}
+footer {
+
+    text-align: center;
+}

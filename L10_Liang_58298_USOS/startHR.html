@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>HaoranLiang 58298</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSSLiang/styles.css">
+</head>
+
+<body>
+    <canvas id="my_canvas"></canvas>
+    <header>
+    
+    <!-- <div class="container">
+        <nav>
+            <ul>
+                <li><a href="usosStartHR.php">Start</a></li>
+                <li><a href="seeCompanyHR.php">View the Companys</a></li>
+                <li><a href="seeDepartmentHR.php">View Departments</a></li>
+                <li><a href="seeEmployeeHR.php">View Employees</a></li>
+                <li><a href="addCompanyHR.php">Enter a new Company</a></li>
+                <li><a href="addDepartmentHR.php">Enter a new Department</a></li>
+                <li><a href="addEmployeeHR.php">Enter a new Employee</a></li>
+            </ul>
+        </nav>
+    </div> -->
+        
+        
+
+    <h1>HR Management System</h1>
+    <h3>Welcome!</h3>
+    <h3>HaoranLiang58298</h3>
+
+    </header>
+
+    <article>
+    
+        <h4>Getting Started</h4>
+
+        To begin, use the navigation menu to view existing company,<br>
+        department, or employee information. <br>
+        You can also add new entries to each category. <br>
+        Our system ensures a seamless and efficient experience for managing HR-related tasks.<br>
+
+    
+    </article>
+    <script>
+        function goToUsosStartHR() {
+            window.location.href = './PHPLiang/usosStartHR.php';
+        }
+        </script>
+        <style>
+            .buttons button {
+            /* 相对定位 */
+            position: relative;
+            width: 400px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 24px;
+            color: #fff;
+            /* 渐变背景 */
+            background: linear-gradient(to right,#03a9f4,#f441a5,#ffeb3b,#09a8f4);
+            /* 背景渐变色大小 */
+            background-size: 400%;
+            /* 圆角 */
+            border-radius: 50px;
+            z-index: 1;
+        }
+        .buttons button::before {
+            content: "";
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            bottom: -5px;
+            right: -5px;
+            /* 渐变背景 */
+            background: linear-gradient(to right,#03a9f4,#f441a5,#ffeb3b,#09a8f4);
+            /* 背景渐变色大小 */
+            background-size: 400%;
+            /* 圆角 */
+            border-radius: 50px;
+            /* 位于按钮之下 */
+            z-index: -1;
+            /* 设置模糊度 显示发光效果 */
+            filter: blur(20px);
+        }
+        .buttons button:hover {
+            /* 动画：名称 时间 infinite是无限次播放 */
+            animation: streamer 8s infinite;
+        }
+        .buttons button:hover::before {
+            animation: streamer 8s infinite;
+        }
+        /* 接下来定义动画 */
+        @keyframes streamer{
+            100%{
+                /* 背景位置 */
+                background-position: -400% 0;
+            }
+        }
+
+
+        </style>
+        <div class="buttons">
+            <button onclick="goToUsosStartHR()">Start</button><br>
+        </div><br><br><br><br><br>
+
+<footer>
+    <h6>&#169;Haoran Liang 58298 2023 </h6>
+</footer>
+</body>
+
+</html>
+<script src="JSLiang/particleHR.js"></script>
+<script>
+    particle.init('my_canvas');
+</script>
